@@ -43,7 +43,7 @@ public class Add{
 
 	} 
 
-	private static final File dbPath = new File( "/Users/Ximena/Documents/CentraleSupelec/IIR/Neo4j/neo4j-community-3.0.7/data/databases/graph.db");
+	private static final File dbPath = new File( "/Users/Neo4j/neo4j-community-3.0.7/data/databases/graph.db");
 
 	private GraphDatabaseService graphDb;
 
