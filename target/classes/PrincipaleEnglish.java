@@ -30,8 +30,8 @@ public class PrincipaleEnglish {
 	public static void main(String[] args) { 
 
 
-		//String dbPath = "/Users/quercini_gia/Documents/software/neo4j-community-3.0.2/data/databases/wikipedia8"; 
-		String dbPath = "/Users/Ximena/Documents/CentraleSupelec/IIR/Neo4j/neo4j-community-3.0.7/data/databases/graph.db";
+		 
+		String dbPath = "/Users/Documents/Neo4j/neo4j-community-3.0.7/data/databases/graph.db";
 
 
 		GraphDatabaseFactory graphDbFactory = new GraphDatabaseFactory(); 
