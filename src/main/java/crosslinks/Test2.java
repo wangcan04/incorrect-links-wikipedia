@@ -42,8 +42,8 @@ public class Test2 {
 
 	/** 
 	 * Relationship types 
-	 * Debemos definir los tipos de relación que queremos almacenar.
-	 *  En este caso vamos a crear unos enums de Java para los tipos de relación que queremos manejar:
+	 * Debemos definir los tipos de relaciÃ³n que queremos almacenar.
+	 *  En este caso vamos a crear unos enums de Java para los tipos de relaciÃ³n que queremos manejar:
 	 */ 
 	public enum Rels implements RelationshipType 
 	{ 
@@ -54,7 +54,7 @@ public class Test2 {
 
 	} 
 
-	private static final File dbPath = new File( "/Users/Ximena/Documents/CentraleSupelec/IIR/Neo4j/neo4j-community-3.0.7/data/databases/graph.db");
+	private static final File dbPath = new File( "/Users/Neo4j/neo4j-community-3.0.7/data/databases/graph.db");
 
 	private GraphDatabaseService graphDb;
 
