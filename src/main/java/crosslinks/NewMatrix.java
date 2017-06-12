@@ -25,7 +25,7 @@ public class NewMatrix
         CODED_BY
     }
 
-    private static final File MATRIX_DB = new File( "/Users/Ximena/Documents/CentraleSupelec/IIR/Neo4j/neo4j-community-3.0.7/data/databases/matrix-new-db" );
+    private static final File MATRIX_DB = new File( "/Users/Neo4j/neo4j-community-3.0.7/data/databases/matrix-new-db" );
     private GraphDatabaseService graphDb;
     private long matrixNodeId;
 
