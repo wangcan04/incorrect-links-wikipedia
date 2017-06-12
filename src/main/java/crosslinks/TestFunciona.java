@@ -26,21 +26,13 @@ import org.neo4j.graphdb.index.Index;
 import org.neo4j.graphdb.index.IndexHits;
 import org.neo4j.graphdb.index.IndexManager;
 
-/**
- * Primer ejemplo
- * Esta clase tiene solo un metodo para buscar nodos
- *
- */
+
 
 public class TestFunciona {
 	
 	String[] nombre = new String[3];
 	
-	/** 
-	 * Relationship types 
-	 * Debemos definir los tipos de relación que queremos almacenar.
-	 *  En este caso vamos a crear unos enums de Java para los tipos de relación que queremos manejar:
-	 */ 
+
 	public enum Rels implements RelationshipType 
 	{ 
 		/** 
@@ -57,7 +49,7 @@ public class TestFunciona {
 			int NumberCross = 0;
 			//------------------------------------
 	
-	//String dbPath = "/home1/quercini_gia/software/neo4j-community-3.0.3/data/databases/wikipedia8";
+	
 	String dbPath = "/Users/Neo4j/neo4j-community-3.0.7/data/databases/graph.db";
 
 	GraphDatabaseFactory graphDbFactory = new GraphDatabaseFactory();
@@ -69,11 +61,7 @@ public class TestFunciona {
 	//Node actor =  ((Object) graphDb).query( new TermQuery( new Term( "name", "Keanu Reeves" ) ) ).getSingle();
 
 	
-	/**
-	 * Todo lo que se hace en Neo4J debe ser dentro de una transacción. 
-	 * Cada base de datos tiene un nodo raíz, que nos sirve para ir pegando de ahí los nodos que necesitemos. 
-	 * Vamos a crear nodos especiales pegados al nodo raíz para guardar Usuarios, Fotos y Status.
-	 */
+
 	Set<Long> visited = new HashSet<Long>(); 
 	try (Transaction tx = graphDb.beginTx()) {
 		
@@ -111,7 +99,7 @@ public class TestFunciona {
 
 
 		} 
-		System.out.println("Numero de Clls!"+ NumberCross);
+		System.out.println("Number of Clls!"+ NumberCross);
 	
 	}
 
