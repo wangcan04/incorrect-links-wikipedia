@@ -38,8 +38,8 @@ public class TestFunciona {
 	
 	/** 
 	 * Relationship types 
-	 * Debemos definir los tipos de relación que queremos almacenar.
-	 *  En este caso vamos a crear unos enums de Java para los tipos de relación que queremos manejar:
+	 * Debemos definir los tipos de relaciÃ³n que queremos almacenar.
+	 *  En este caso vamos a crear unos enums de Java para los tipos de relaciÃ³n que queremos manejar:
 	 */ 
 	public enum Rels implements RelationshipType 
 	{ 
@@ -58,7 +58,7 @@ public class TestFunciona {
 			//------------------------------------
 	
 	//String dbPath = "/home1/quercini_gia/software/neo4j-community-3.0.3/data/databases/wikipedia8";
-	String dbPath = "/Users/Ximena/Documents/CentraleSupelec/IIR/Neo4j/neo4j-community-3.0.7/data/databases/graph.db";
+	String dbPath = "/Users/Neo4j/neo4j-community-3.0.7/data/databases/graph.db";
 
 	GraphDatabaseFactory graphDbFactory = new GraphDatabaseFactory();
 	GraphDatabaseService graphDb = graphDbFactory.newEmbeddedDatabase(new File(dbPath));
@@ -70,9 +70,9 @@ public class TestFunciona {
 
 	
 	/**
-	 * Todo lo que se hace en Neo4J debe ser dentro de una transacción. 
-	 * Cada base de datos tiene un nodo raíz, que nos sirve para ir pegando de ahí los nodos que necesitemos. 
-	 * Vamos a crear nodos especiales pegados al nodo raíz para guardar Usuarios, Fotos y Status.
+	 * Todo lo que se hace en Neo4J debe ser dentro de una transacciÃ³n. 
+	 * Cada base de datos tiene un nodo raÃ­z, que nos sirve para ir pegando de ahÃ­ los nodos que necesitemos. 
+	 * Vamos a crear nodos especiales pegados al nodo raÃ­z para guardar Usuarios, Fotos y Status.
 	 */
 	Set<Long> visited = new HashSet<Long>(); 
 	try (Transaction tx = graphDb.beginTx()) {
