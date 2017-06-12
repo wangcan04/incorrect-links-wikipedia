@@ -31,11 +31,6 @@ import org.neo4j.graphdb.traversal.Traverser;
 public class Testcon2Metodos {
 
 
-	/** 
-	 * Relationship types 
-	 * Debemos definir los tipos de relaci�n que queremos almacenar.
-	 *  En este caso vamos a crear unos enums de Java para los tipos de relaci�n que queremos manejar:
-	 */ 
 	public enum Rels implements RelationshipType 
 	{ 
 		/** 
@@ -45,7 +40,7 @@ public class Testcon2Metodos {
 
 	} 
 
-	private static final File dbPath = new File( "/Users/Ximena/Documents/CentraleSupelec/IIR/Neo4j/neo4j-community-3.0.7/data/databases/graph.db");
+	private static final File dbPath = new File( "/Users/Neo4j/neo4j-community-3.0.7/data/databases/graph.db");
 
 	private GraphDatabaseService graphDb;
 	
@@ -80,11 +75,6 @@ public class Testcon2Metodos {
 		System.out.println("Shutdown-Done!");
 	}
 
-	/**
-	 * Imprimir los crossLinks del articulo
-	 * Print the crosslinks of the article
-	 * @return 
-	 */
 	public List<String>  PrintWikiArticles()
 	{
 		//----- Declarar Variables----------//
@@ -133,9 +123,9 @@ public class Testcon2Metodos {
 		System.out.println("Number of Clls!"+ NumberCross + "\n");
 		
 		//---------Print List--------------------------------------//
-		System.out.println("Lista longitud!"+ ListNode.size() + "\n");
+		System.out.println("List size!"+ ListNode.size() + "\n");
 		for (int i=0;i<ListNode.size();i++){
-		System.out.println("Lista Node !"+ ListNode.get(i) + "\n");
+		System.out.println("List Node !"+ ListNode.get(i) + "\n");
 		}
 		//--------------------------------------------------------//
 
@@ -143,17 +133,13 @@ public class Testcon2Metodos {
 
 	}
 
-	/**
-	 * Encuentra los crosslinks del nodo buscado
-	 * @return
-	 */
 	public String printNodeFriends(List<String> ListNode)
 	{
 
 		//---------Print List--------------------------------------//
-		System.out.println("Segundo Metodo List !"+ ListNode.size() + "\n");
+		System.out.println(" List !"+ ListNode.size() + "\n");
 		for (int i=0;i<ListNode.size();i++){
-		System.out.println("Segundo Lista Node !"+ ListNode.get(i) );
+		System.out.println(" List Node !"+ ListNode.get(i) );
 		}
 		//--------------------------------------------------------//
 		
@@ -245,9 +231,9 @@ public class Testcon2Metodos {
 		}
 
 		//---------Print List--------------------------------------//
-		System.out.println("Lista longitud!"+ ListNode.size() + "\n");
+		System.out.println("List size!"+ ListNode.size() + "\n");
 		for (int i=0;i<ListNode.size();i++){
-			System.out.println("Lista Node !"+ ListNode.get(i) + "\n");
+			System.out.println("List Node !"+ ListNode.get(i) + "\n");
 		}
 		//--------------------------------------------------------//
 
